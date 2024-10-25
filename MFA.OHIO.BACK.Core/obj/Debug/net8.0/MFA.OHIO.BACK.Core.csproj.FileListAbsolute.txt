@@ -1,0 +1,12 @@
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\bin\Debug\net8.0\MFA.OHIO.BACK.Core.deps.json
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\bin\Debug\net8.0\MFA.OHIO.BACK.Core.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\bin\Debug\net8.0\MFA.OHIO.BACK.Core.pdb
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.csproj.AssemblyReference.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.AssemblyInfoInputs.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.AssemblyInfo.cs
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.csproj.CoreCompileInputs.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\refint\MFA.OHIO.BACK.Core.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\MFA.OHIO.BACK.Core.pdb
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Core\obj\Debug\net8.0\ref\MFA.OHIO.BACK.Core.dll

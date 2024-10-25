@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "MFA.OHIO.BACK.Api.Controllers.ApplicationsController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/Applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

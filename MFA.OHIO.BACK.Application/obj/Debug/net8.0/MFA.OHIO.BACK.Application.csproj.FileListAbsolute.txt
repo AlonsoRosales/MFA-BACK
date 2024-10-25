@@ -1,0 +1,15 @@
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\bin\Debug\net8.0\MFA.OHIO.BACK.Application.deps.json
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\bin\Debug\net8.0\MFA.OHIO.BACK.Application.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\bin\Debug\net8.0\MFA.OHIO.BACK.Application.pdb
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\bin\Debug\net8.0\MFA.OHIO.BACK.Core.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\bin\Debug\net8.0\MFA.OHIO.BACK.Core.pdb
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.csproj.AssemblyReference.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.AssemblyInfoInputs.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.AssemblyInfo.cs
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.csproj.CoreCompileInputs.cache
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.B173C2C5.Up2Date
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\refint\MFA.OHIO.BACK.Application.dll
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\MFA.OHIO.BACK.Application.pdb
+C:\Users\ALONSO\Entretenimiento\mfa-back\MFA.OHIO.BACK\MFA.OHIO.BACK.Application\obj\Debug\net8.0\ref\MFA.OHIO.BACK.Application.dll
