@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace MFA.OHIO.BACK.Core.Entities
 {
     public class SystemVariables
     {
-        public int ttl {  get; set; }
-        public int maxFailedAttemps { get; set; }
-        public int watchdogTimer { get; set; }
+        public int systemVariableId {  get; set; }
+        public string systemVariableName { get; set; }
+        public string systemVariableDescription { get; set; }
+        public int scheduleInterval {  get; set; }
+        public string timeUnit {  get; set; }
+        public char status {  get; set; }
+        public int userIdMofication {  get; set; }
+        public DateTime fechaHoraModificacion {  get; set; }
+        
     }
 }

@@ -1,11 +1,6 @@
 ﻿using MFA.OHIO.BACK.Core.Entity;
 using MFA.OHIO.BACK.Core.Repositories;
 using MFA.OHIO.BACK.Infraestructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MFA.OHIO.BACK.Infraestructure.Repositories
 {

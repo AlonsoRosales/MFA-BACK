@@ -1,10 +1,4 @@
-﻿using MediatR;
-using MFA.OHIO.BACK.Core.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MFA.OHIO.BACK.Core.Entities;
 
 namespace MFA.OHIO.BACK.Core.Repositories
 {

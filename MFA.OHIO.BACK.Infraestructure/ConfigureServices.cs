@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using MFA.OHIO.BACK.Application.Interfaces;
+﻿using MFA.OHIO.BACK.Application.Interfaces;
 using MFA.OHIO.BACK.Core.Repositories;
 using MFA.OHIO.BACK.Infraestructure.Data;
 using MFA.OHIO.BACK.Infraestructure.Repositories;
@@ -7,12 +6,6 @@ using MFA.OHIO.BACK.Infraestructure.Services.Notification;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MFA.OHIO.BACK.Infraestructure
 {
@@ -32,6 +25,7 @@ namespace MFA.OHIO.BACK.Infraestructure
             services.AddTransient<IPortalUserRepository, PortalUserRepository>();
             services.AddTransient<ITokenRepository, TokenRepository>();
             services.AddTransient<ITransactionRepository, TransactionRepository>();
+            services.AddTransient<ISystemVariablesRepository, SystemVariablesRepository>();
 
             services.AddTransient<INotificationService, NotificationService>();
 

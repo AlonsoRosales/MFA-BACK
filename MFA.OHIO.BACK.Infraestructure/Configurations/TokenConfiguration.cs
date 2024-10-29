@@ -1,11 +1,6 @@
 ﻿using MFA.OHIO.BACK.Core.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MFA.OHIO.BACK.Infraestructure.Configurations
 {
@@ -43,8 +38,7 @@ namespace MFA.OHIO.BACK.Infraestructure.Configurations
                 .IsRequired();
 
             builder.Property(t => t.fechaHoraCambioEstado)
-                .HasColumnName("FECHAHORACAMBIOESTADO")
-                .IsRequired();
+                .HasColumnName("FECHAHORACAMBIOESTADO");
 
             builder.Property(t => t.ttlConfig)
                 .HasColumnName("TTLCONFIG")

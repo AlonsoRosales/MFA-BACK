@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MFA.OHIO.BACK.Core.Entity
+﻿
+namespace MFA.OHIO.BACK.Core.Entities
 {
     public class Audit
     {

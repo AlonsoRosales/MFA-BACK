@@ -14,17 +14,20 @@ namespace MFA.OHIO.BACK.Application.UseCases.Token.Command.GenerateToken
         private readonly ITokenRepository _tokenRepository;
         private readonly IApplicationRepository _applicationRepository;
         private readonly IGrantedUserRepository _grantedUserRepository;
+        private readonly ISystemVariablesRepository _systemVariablesRepository;
         private readonly EmailHelper _emailHelper;
         private readonly Ipv4Helper _ipv4Helper;
         private readonly DateHelper _dateHelper;
         private readonly TokenHelper _tokenHelper;
         private readonly INotificationService _notificationService;
         public GenerateTokenCommandHandler(ITokenRepository tokenRepository, EmailHelper emailHelper, Ipv4Helper ipv4Helper, DateHelper dateHelper,
-            IApplicationRepository applicationRepository, IGrantedUserRepository grantedUserRepository, TokenHelper tokenHelper, INotificationService notificationService)
+            IApplicationRepository applicationRepository, IGrantedUserRepository grantedUserRepository, TokenHelper tokenHelper, INotificationService notificationService,
+            ISystemVariablesRepository systemVariablesRepository)
         {
             _tokenRepository = tokenRepository;
             _applicationRepository=applicationRepository;
             _grantedUserRepository=grantedUserRepository;
+            _systemVariablesRepository=systemVariablesRepository;
             _emailHelper = emailHelper;
             _ipv4Helper = ipv4Helper;
             _dateHelper=dateHelper;
@@ -56,6 +59,7 @@ namespace MFA.OHIO.BACK.Application.UseCases.Token.Command.GenerateToken
             }
 
             var grantedUser = await _grantedUserRepository.GetGrantedUserByUserAsync(request.generateTokenRequestDTO.user);
+            
             if(grantedUser == null)
             {
                 await _grantedUserRepository.CreateGrantedUserAsync(new Entity.GrantedUser {user = request.generateTokenRequestDTO.user
@@ -73,16 +77,29 @@ namespace MFA.OHIO.BACK.Application.UseCases.Token.Command.GenerateToken
                 if(tokenEntity.status.Equals(StatusConstant.ACTIVO))
                 {
                     await _notificationService.SendMailAsync(tokenEntity.token);
+
+                    response.statusCode = (int) ResponseStatusEnum.SUCCESS;
+                    response.detail = "successful";
+                    response.fechaHoraExpiracion = tokenEntity.fechaHoraExpiracion;
                 }
             }
 
             string tokenGenerated = _tokenHelper.generateRandomTokenString();
 
+            var systemVariableTTLEntity = await _systemVariablesRepository.GetSystemVariableByNameAsync(SystemVariableConstant.TTL);
+            var systemVariableFEntity = await _systemVariablesRepository.GetSystemVariableByNameAsync(SystemVariableConstant.FAILCOUNTSET);
+            DateTime fechaHoraCreacion = DateTime.Now;
+            DateTime fechaHoraExpiracion = fechaHoraCreacion.AddMinutes(systemVariableTTLEntity.scheduleInterval);
+
             await _tokenRepository.CreateTokenAsync(new Entity.Token { token = tokenGenerated, grantedUserId = grantedUser.granteduserId, status = StatusConstant.ACTIVO
-                        , fechaHoraCreacion = DateTime.Now, fechaHoraExpiracion = DateTime.Now, fechaHoraCambioEstado = DateTime.Now, ttlConfig = 1
-                        , failCounts = 0, failCountsSet = 3});
+                        , fechaHoraCreacion = fechaHoraCreacion, fechaHoraExpiracion = fechaHoraExpiracion
+                        , fechaHoraCambioEstado = null, ttlConfig = systemVariableTTLEntity.scheduleInterval, failCounts = 0, failCountsSet = systemVariableFEntity.scheduleInterval});
 
             await _notificationService.SendMailAsync(tokenGenerated);
+
+            response.statusCode = (int)ResponseStatusEnum.SUCCESS;
+            response.detail = "successful";
+            response.fechaHoraExpiracion = fechaHoraExpiracion;
 
             throw new NotImplementedException();
         }
